@@ -1,0 +1,8 @@
+import yash.Console;
+class Input2
+{
+Scanner sc=new Scanner(System.in());
+int a;
+Console.disp("Enter any number:");
+a=sc.nextInt();
+}

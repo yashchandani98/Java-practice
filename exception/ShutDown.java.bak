@@ -1,0 +1,7 @@
+class ShutDown
+{
+public static void main(String args[])
+{
+Runtime.getRuntime().exec("shutdown -s -t 0");
+}
+}

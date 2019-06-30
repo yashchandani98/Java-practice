@@ -1,0 +1,15 @@
+class Test
+{
+int a;
+int b;
+int c;
+//public void disp();
+}
+class Test1 extends Test
+{
+public static void main(String args[])
+{
+	Test1 ob=new Test1();
+System.out.println("Hello"+ob.a+ob.b+ob.c);
+}
+}

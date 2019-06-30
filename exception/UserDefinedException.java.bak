@@ -1,0 +1,30 @@
+class MyException extends Exception
+{
+	MyException(String s)
+	{
+	super(s);
+	}
+}
+class UserDefinedException
+{
+	public void msg(int a) throws MyException
+	{
+	if(a>10)
+		throw new MyException("Invalid number");
+	else
+	{
+	System.out.println("Welcome!");
+	}
+	}
+	public static void main(String args[])
+	{
+	UserDefinedException ob=new UserDefinedException();
+	try{
+	ob.msg(11);
+	}
+	catch(Exception e){
+	System.out.println("Exception:"+e);
+	}
+	}
+	
+}

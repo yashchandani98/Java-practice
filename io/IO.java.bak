@@ -1,0 +1,8 @@
+class IO
+{
+public static void main(String args[])
+{
+int s1=System.in.read();
+System.out.println(s1);
+}
+}

@@ -1,0 +1,53 @@
+import java.util.Scanner;
+class Marathon{
+public static void main(String args[])
+{
+String name[]={"Elena","Thomas","Hamilton","Suzie","Phil","Matt","Alex","Emma","John","James","Jane","Emily","Daniel","Neda","Aaron","Kate"};
+int time[]={341,273,278,329,445,402,388,275,243,334,412,393,299,343,317,265};
+int win=winnerResult(name,time);
+System.out.println("Winner is:"+name[win]+"  in  "+time[win]+"  minutes.");
+}
+public static int winnerResult(String str[],int time[]){
+int  winner=-1;
+int  count=-1;
+int a=-1;
+for(int i=0;i<16;i++)//i<length
+{	
+for(int j=0;j<16;j++)//j<length
+{
+	
+	if(a==j)
+	{
+		if(j==15)//j==length-1
+		{}
+		else
+		j++;
+	}
+if(time[i]<time[j])
+ {
+	
+	a=i;
+	count++;
+if(count==14)//count==length-2
+	 {
+     winner=i; 
+	break;
+	 }
+}
+else{
+
+	count=0;
+break;
+}
+}
+}
+return winner;
+}
+/*public int runnerUpResult(int time[])
+{
+for(int i=0;i<16;i++)
+{
+for()
+}
+}*/
+}

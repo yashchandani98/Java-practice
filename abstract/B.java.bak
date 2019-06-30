@@ -1,0 +1,13 @@
+abstract class A
+{
+abstract void fun1();
+}
+class B extends A
+{
+public static void main(String args[])
+{
+void fun1(){
+System.out.println("Function1 body");
+}
+}
+}
